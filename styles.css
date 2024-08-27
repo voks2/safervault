@@ -49,9 +49,7 @@ body {
 
 header {
   padding-top: 80px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  
 }
 
 #top-bar {
@@ -151,6 +149,7 @@ a:hover {
     margin: 0 auto;
     padding: 0px;
     
+    
     font-size: 1.1rem;
     line-height: 1.6rem;
     background-color: white;
@@ -237,11 +236,87 @@ footer {
   
 }
 
+.hamburger {
+  display: none; /* Hide hamburger menu on desktop */
+  flex-direction: column;
+  cursor: pointer;
+}
 
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background-color: var(--black-color);
+  margin: 4px 0;
+}
 
 
 
 @media (max-width: 768px ){
+
+  html {
+    font-size: 22px;
+  }
+
+  body {
+    padding: 0 15p;
+  }
+
+  /* NAVIGATION MENU */
+
+  #top-menu {
+    display: none; /* Hide menu items on mobile */
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px; /* Adjust based on top bar height */
+    right: 20px;
+    width: 200px;
+  }
+
+  #top-menu a {
+    margin: 10px 0;
+  }
+
+  .hamburger {
+    display: flex; /* Show hamburger menu on mobile */
+  }
+
+  #top-menu.active {
+    display: flex; /* Show menu items when hamburger is clicked */
+  }
+  
+
+  /* -------- */
+
+  .hero-section {
+    padding:  140px 0;
+  }
+
+  .main-heading {
+    font-size: 3.2rem;
+    padding-bottom: 40px;
+  }
+  .sub-heading {
+    font-size: 2rem;
+    padding-bottom: 25px;
+  }
+
+  .content {
+    font-size: 1.4px;
+  }
+
+  .section {
+    flex-direction: column;
+  }
+
+  .section-title {
+    padding: 0;
+    width: 100%;
+  }
+
+  .sub-section {
+    flex-direction: column;
+  }
 
 
 
