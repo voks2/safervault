@@ -317,6 +317,9 @@ footer {
   .sub-section {
     flex-direction: column;
   }
+  .section-text {
+    width: 100%;
+  }
 
 
 
