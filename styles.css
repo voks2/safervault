@@ -19,7 +19,11 @@
   --accent-color: #EF3E3D; /* Accent color for highlights */
   --secondary-color: #f0f0f0;
 }
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 
 html {
@@ -34,10 +38,12 @@ html {
 
 
 body {
-  margin: 0;
+  width: 100vw; /* 100% of the viewport width */
+  height: 100vh; /* 100% of the viewport height (optional, for full-screen layouts) */
+  margin: 0; /* Remove default margin */
   padding: 0 50px;
   box-sizing: border-box;
-  
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 
@@ -276,11 +282,13 @@ footer {
 
   html {
     font-size: 16px;
+    width: 100vw;
   }
 
   body {
     padding: 0 30px;
     border: #EF3E3D 1px solid;
+    
   }
 
   #top-bar {
