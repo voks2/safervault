@@ -15,6 +15,7 @@
 
 :root {
   --text-color: #171717; /* Primary text color */
+  --black-color: black;
   --accent-color: #FF6464; /* Accent color for highlights */
   --secondary-color: #f0f0f0;
 }
@@ -53,7 +54,7 @@ header {
 #top-bar {
   z-index: 1; /* Ensure these elements appear above the random lines */
   height: 80px;
-  border-bottom: #171717 1px solid;
+  border-bottom: black 1px solid;
   display: flex;
   flex-direction: row;
   position: fixed;
@@ -68,6 +69,7 @@ header {
 
 #top-menu a {
   margin-left: 80px;
+  color: var(--text-color);
 }
 
 a {
