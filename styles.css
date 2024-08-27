@@ -28,7 +28,8 @@ html {
   letter-spacing: -0.8px;
   line-height: normal;
   color: var(--text-color);
-
+  padding: 0;
+  margin: 0;
 }
 
 
@@ -133,7 +134,7 @@ a:hover {
 .logo-text {
   width: auto;
   height: 40px; /* Adjust height as needed */
-  margin-right: 8px; /* Spacing between text and sign logos */
+  
 }
 
 /* Fixed width for the sign logo */
@@ -148,13 +149,12 @@ a:hover {
   padding: 180px 0;
   
 }
-
+/*
 .hero-image {
   padding-right: 13vw;
   margin-left: 100px;
-  
-  
-}
+} 
+*/
 
 .main-heading {
   font-size: 4rem;
@@ -197,8 +197,7 @@ a:hover {
     padding-top: 30px;
     display: flex;
     flex-direction: row;
-    
-    
+
   }
   
   
@@ -279,14 +278,18 @@ footer {
 
   body {
     padding: 0 30px;
+    border: #EF3E3D 1px solid;
   }
 
   #top-bar {
     height: 60px;
-    right:30px;
+    /* right:30px; */
     left: 30px;
   }
 
+  .logo-text {
+    height: 30px;
+  }
   /* NAVIGATION MENU */
 
   .menu ul {
@@ -347,10 +350,17 @@ footer {
   .section-sub-title {
     width: 100%;
     margin-bottom: 20px;
+    
+  }
+
+  .sub-section-container > *:not(:first-child) {
+    border-top: none;
+    padding-top: 0px;
   }
 
   .sub-section {
     flex-direction: column;
+    padding-bottom: 0px;
   }
   .section-text {
     width: 100%;
