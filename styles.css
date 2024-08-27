@@ -1,0 +1,224 @@
+/* @font-face {
+  font-family: 'Nimbus Sans';
+  src: url('assets/fonts/nimbussanl-bolita-webfont.woff') format('woff'),
+       url('assets/fonts/nimbussanl-bol-webfont.woff') format('woff')
+       url('assets/fonts/nimbussanl-regita-webfont.woff') format('woff'),
+       url('assets/fonts/nimbussanl-reg-webfont.woff') format('woff'),
+       url('assets/fonts/nimbussanl-bolita-webfont.woff2') format('woff2'),
+       url('assets/fonts/nimbussanl-bol-webfont.woff2') format('woff2'),
+       url('assets/fonts/nimbussanl-regita-webfont.woff2') format('woff2'),
+       url('assets/fonts/nimbussanl-reg-webfont.woff2') format('woff2');  
+
+  font-weight: normal;
+  font-style: normal;
+} */
+
+:root {
+  --text-color: #171717; /* Primary text color */
+  --accent-color: #FF6464; /* Accent color for highlights */
+  --secondary-color: #f0f0f0;
+}
+
+
+
+html {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  letter-spacing: -0.8px;
+  line-height: normal;
+  color: var(--text-color);
+
+}
+
+
+body {
+  margin: 0;
+  padding: 0 50px;
+  
+  
+}
+
+
+#container {
+  
+  width: 100%;
+  
+  
+}
+
+header {
+  padding-top: 80px;
+}
+
+#top-bar {
+  z-index: 1; /* Ensure these elements appear above the random lines */
+  height: 80px;
+  border-bottom: #171717 1px solid;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top:0;
+  right:50px;
+  left: 50px;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+#top-menu a {
+  margin-left: 80px;
+}
+
+a {
+  text-decoration: none;
+  
+}
+a:hover {
+  text-decoration: underline;
+}
+
+#logo img {
+  width: 100px;
+}
+
+
+
+.hero-section {
+  padding: 180px 0;
+  
+}
+
+.main-heading {
+  font-size: 4rem;
+  font-weight: 700;
+  padding-bottom: 20px;
+  line-height: 3.8rem;
+  max-width: 1400px;
+
+}
+
+.sub-heading {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+.red-color {
+  color: #FF6464;
+}
+
+
+.content {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0px;
+    
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+
+  }
+
+.content > *:not(:last-child) {
+  padding-bottom: 80px;
+}
+
+.section {
+    border-top: #171717 1px solid;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    
+    
+  }
+  
+  
+
+.section-title {
+  margin-top: -100px;
+  padding-top: 100px;
+  padding-right: 50px;
+  width: 350px;
+  font-weight: 700;
+  
+}
+
+.section-sub-title {
+  width: 250px;
+  
+  padding-right: 70px;
+  font-weight: 700;
+}
+
+
+.sub-section-container {
+  width: 100%;
+}
+.sub-section-container > *:not(:first-child) {
+  border-top: #171717 1px solid;
+  padding-top: 30px;
+}
+
+.sub-section {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 10px;
+  
+}
+
+.section-text {
+
+  font-weight: 300;
+  max-width: 650px;
+  
+}
+
+
+.section-text-sub-title {
+  font-weight: 700;
+}
+  
+
+
+  .section-text p{
+    margin: 0 0 20px 0;
+    
+  }
+
+
+
+footer {
+  height: 80px;
+  display: flex;
+  justify-content:end;
+  align-items: center;
+  border-top: #171717 1px solid;
+  font-size: 0.8rem;
+  text-decoration: none;
+  margin-top: 100px;
+  
+}
+
+
+
+
+
+@media (max-width: 768px ){
+
+
+
+}
+
+
+
+
+
+
+#maintan {
+  position: fixed;
+  z-index: 3;
+  top:0;
+  background-color: #EF4136;
+  height: 100%;
+  width: 100%;
+}
