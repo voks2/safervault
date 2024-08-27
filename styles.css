@@ -338,8 +338,15 @@ footer {
   }
 
   .section-title {
-    padding: 0;
+    
     width: 100%;
+    margin-bottom: 20px;
+    
+  }
+
+  .section-sub-title {
+    width: 100%;
+    margin-bottom: 20px;
   }
 
   .sub-section {
