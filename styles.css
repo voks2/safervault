@@ -16,7 +16,7 @@
 :root {
   --text-color: #171717; /* Primary text color */
   --black-color: black;
-  --accent-color: #FF6464; /* Accent color for highlights */
+  --accent-color: #EF3E3D; /* Accent color for highlights */
   --secondary-color: #f0f0f0;
 }
 
@@ -49,6 +49,9 @@ body {
 
 header {
   padding-top: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 #top-bar {
@@ -67,21 +70,45 @@ header {
   
 }
 
+a {
+  text-decoration: none;
+}
+
 #top-menu a {
   margin-left: 80px;
   color: var(--text-color);
-}
 
-a {
-  text-decoration: none;
   
 }
-a:hover {
-  text-decoration: underline;
+
+.content a {
+  
+  color: var(--accent-color);
+  
 }
 
-#logo img {
-  width: 100px;
+a:hover {
+  text-decoration: underline;
+  color: var(--accent-color);
+}
+
+/* Container to manage the layout of the logo */
+#logo {
+  display: flex;
+  align-items: center;
+}
+
+/* Auto width for the text logo */
+.logo-text {
+  width: auto;
+  height: 40px; /* Adjust height as needed */
+  margin-right: 8px; /* Spacing between text and sign logos */
+}
+
+/* Fixed width for the sign logo */
+.logo-sign {
+  width: 40px; /* Manually set width for the sign logo */
+  height: auto; /* Maintain aspect ratio */
 }
 
 
@@ -89,6 +116,14 @@ a:hover {
 .hero-section {
   padding: 180px 0;
   
+}
+
+.hero-image {
+  padding-right: 13vw;
+  margin-left: 100px;
+  position: relative;
+  bottom: -180px;
+  z-index: -1;
 }
 
 .main-heading {
@@ -107,7 +142,7 @@ a:hover {
 }
 
 .red-color {
-  color: #FF6464;
+  color: var(--accent-color);
 }
 
 
@@ -118,6 +153,7 @@ a:hover {
     
     font-size: 1.1rem;
     line-height: 1.6rem;
+    background-color: white;
 
   }
 
@@ -197,7 +233,7 @@ footer {
   border-top: #171717 1px solid;
   font-size: 0.8rem;
   text-decoration: none;
-  margin-top: 100px;
+  margin-top: 180px;
   
 }
 
