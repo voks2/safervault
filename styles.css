@@ -88,7 +88,7 @@ a {
   list-style: none;
   margin: 0;
   padding: 0;
- 
+
 }
 
 .menu ul li {
@@ -112,10 +112,10 @@ a {
 }
 
 .hamburger span {
-  height: 3px;
-  width: 25px;
+  height: 2px;
+  width: 30px;
   background-color: var(--black-color);
-  margin: 4px 0;
+  margin: 3px 0;
 }
 
 /* ----------------  */ 
@@ -303,31 +303,55 @@ footer {
   /* NAVIGATION MENU */
 
   .menu ul {
-    display: none; /* Hide menu items on mobile */
+    max-height: 0; /* Start with the menu hidden */
+    overflow: hidden; /* Hide overflowing content */
     flex-direction: column;
     background-color: white;
     border: 1px solid black;
+    border-top: 0;
     position: absolute;
-    top: 60px; /* Adjust based on top bar height */
+    top: 59px; /* Adjust based on top bar height */
     right: 0px;
-    width: 100px;
-    padding: 20px 20px;
-  }
+    width: 240px;
+    padding: 0 20px; /* Remove padding to prevent overflow when hidden */
+    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
 
-  .menu ul li  {
+.menu ul li {
     margin: 10px 0;
-  }
+}
 
-  .hamburger {
+.hamburger {
     display: flex; /* Show hamburger menu on mobile */
-  }
+}
 
-  .menu.active ul {
-    display: flex; /* Show menu items when hamburger is clicked */
-  }
-  
+.menu.active ul {
+    max-height: 500px; /* Adjust this height based on the menu content */
+    width: 240px;
+    padding: 20px 20px; /* Add padding when the menu is visible */
+}
 
-  /* -------- */
+/* Optional: Adjust the transition for closing */
+.menu ul li {
+    transition: opacity 0.3s ease-in-out;
+    border-bottom: 0.5px rgb(114, 114, 114) solid;
+    padding-bottom: 15px;
+}
+
+.menu ul li:last-child {
+  border: none;
+  padding-bottom: 5px;
+}
+
+
+.menu ul li.hidden {
+    opacity: 0;
+}
+
+  /* END MENU NAV ------------------------------------------ */
+
+
+
 
   .hero-section {
     padding:  100px 0;
@@ -343,9 +367,7 @@ footer {
     padding-bottom: 15px;
   }
 
-  .content {
-    
-  }
+
 
   .section {
     flex-direction: column;
