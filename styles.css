@@ -317,7 +317,7 @@ footer {
     width: 220px;
     padding: 0 20px; /* Remove padding to prevent overflow when hidden */
     transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
-    z-index: 10;
+    
 }
 
 .menu ul li {
@@ -332,6 +332,7 @@ footer {
     max-height: 500px; /* Adjust this height based on the menu content */
     width: 220px;
     padding: 20px 20px; /* Add padding when the menu is visible */
+    z-index: 200;
 }
 
 /* Optional: Adjust the transition for closing */
