@@ -46,7 +46,7 @@ html {
 
 
 body {
-  width: 100vw; /* 100% of the viewport width */
+  width: 100%; /* 100% of the viewport width */
   background-color: var(--background-color);
   margin: 0; /* Remove default margin */
   padding: 0 50px;
