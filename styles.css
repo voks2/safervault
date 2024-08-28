@@ -316,11 +316,11 @@ footer {
     overflow: hidden; /* Hide overflowing content */
     flex-direction: column;
     background-color: var(--background-color);
-    border-bottom: 1px solid var(--border-color);
+    
     border-left: 1px solid var(--border-color);
     border-right: 1px solid var(--border-color);
     position: absolute;
-    top: 60px; /* Adjust based on top bar height */
+    top: 59px; /* Adjust based on top bar height */
     right: 0px;
     width: 220px;
     padding: 0 20px; /* Remove padding to prevent overflow when hidden */
@@ -340,7 +340,7 @@ footer {
     max-height: 500px; /* Adjust this height based on the menu content */
     width: 220px;
     padding: 20px 20px; /* Add padding when the menu is visible */
-    z-index: 200;
+    border-bottom: 1px solid var(--border-color);
 }
 
 /* Optional: Adjust the transition for closing */
