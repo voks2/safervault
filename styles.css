@@ -15,9 +15,9 @@
 
 :root {
   --text-color: #171717; /* Primary text color */
-  --black-color: black;
+  --background-color: white;
   --accent-color: #EF3E3D; /* Accent color for highlights */
-  --secondary-color: #f0f0f0;
+  --border-color: black;
 }
 * {
   margin: 0;
@@ -39,7 +39,7 @@ html {
 
 body {
   width: 100vw; /* 100% of the viewport width */
-  height: 100vh; /* 100% of the viewport height (optional, for full-screen layouts) */
+  
   margin: 0; /* Remove default margin */
   padding: 0 50px;
   box-sizing: border-box;
@@ -63,7 +63,7 @@ header {
 #top-bar {
   z-index: 1; /* Ensure these elements appear above the random lines */
   height: 80px;
-  border-bottom: black 1px solid;
+  border-bottom: var(--border-color) 1px solid;
   display: flex;
   flex-direction: row;
   position: fixed;
@@ -99,6 +99,7 @@ a {
 .menu ul li a {
   text-decoration: none;
   color: var(--text-color);
+  
 }
 
 .menu ul li a:hover {
@@ -114,7 +115,7 @@ a {
 .hamburger span {
   height: 2px;
   width: 30px;
-  background-color: var(--black-color);
+  background-color: var(--border-color);
   margin: 3px 0;
 }
 
@@ -192,7 +193,7 @@ a:hover {
     
     font-size: 1.1rem;
     line-height: 1.6rem;
-    background-color: white;
+    background-color: var(--background-color);
 
   }
 
@@ -201,7 +202,7 @@ a:hover {
 }
 
 .section {
-    border-top: #171717 1px solid;
+    border-top: var(--border-color) 1px solid;
     padding-top: 30px;
     display: flex;
     flex-direction: row;
@@ -231,7 +232,7 @@ a:hover {
   width: 100%;
 }
 .sub-section-container > *:not(:first-child) {
-  border-top: #171717 1px solid;
+  border-top: var(--border-color) 1px solid;
   padding-top: 30px;
 }
 
@@ -268,7 +269,7 @@ footer {
   display: flex;
   justify-content:end;
   align-items: center;
-  border-top: #171717 1px solid;
+  border-top: var(--border-color) 1px solid;
   font-size: 0.8rem;
   text-decoration: none;
   margin-top: 180px;
@@ -287,7 +288,7 @@ footer {
 
   body {
     padding: 0 30px;
-    border: #EF3E3D 1px solid;
+    
     
   }
 
@@ -306,9 +307,10 @@ footer {
     max-height: 0; /* Start with the menu hidden */
     overflow: hidden; /* Hide overflowing content */
     flex-direction: column;
-    background-color: white;
-    border: 1px solid black;
-    border-top: 0;
+    background-color: var(--background-color);
+    border-bottom: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
     position: absolute;
     top: 59px; /* Adjust based on top bar height */
     right: 0px;
@@ -336,7 +338,10 @@ footer {
     transition: opacity 0.3s ease-in-out;
     border-bottom: 0.5px rgb(114, 114, 114) solid;
     padding-bottom: 15px;
+    
 }
+
+
 
 .menu ul li:last-child {
   border: none;
@@ -374,7 +379,9 @@ footer {
   }
 
   .section-title {
-    
+    margin-top: -60px;
+    padding-top: 60px;
+
     width: 100%;
     margin-bottom: 30px;
     font-size: 1.4rem;
