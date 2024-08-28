@@ -280,13 +280,27 @@ footer {
   justify-content:end;
   align-items: center;
   border-top: var(--border-color) 1px solid;
-  font-size: 0.8rem;
-  text-decoration: none;
-  margin-top: 180px;
+    
+  margin-top: 240px;
   
 }
 
-footer a {
+.footer-menu ul {
+  font-size: 0.8rem;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-menu ul li {
+  margin-left: 40px;
+  color: var(--text-color);
+}
+
+
+.footer-menu ul li a {
+  text-decoration: none;
   color: var(--text-color)
 }
 
