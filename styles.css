@@ -61,7 +61,7 @@ header {
 }
 
 #top-bar {
-  z-index: 1; /* Ensure these elements appear above the random lines */
+  z-index: 100; 
   height: 80px;
   border-bottom: var(--border-color) 1px solid;
   display: flex;
@@ -314,9 +314,10 @@ footer {
     position: absolute;
     top: 59px; /* Adjust based on top bar height */
     right: 0px;
-    width: 240px;
+    width: 220px;
     padding: 0 20px; /* Remove padding to prevent overflow when hidden */
     transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+    z-index: 10;
 }
 
 .menu ul li {
@@ -329,7 +330,7 @@ footer {
 
 .menu.active ul {
     max-height: 500px; /* Adjust this height based on the menu content */
-    width: 240px;
+    width: 220px;
     padding: 20px 20px; /* Add padding when the menu is visible */
 }
 
@@ -379,8 +380,8 @@ footer {
   }
 
   .section-title {
-    margin-top: -60px;
-    padding-top: 60px;
+    margin-top: -80px;
+    padding-top: 80px;
 
     width: 100%;
     margin-bottom: 30px;
