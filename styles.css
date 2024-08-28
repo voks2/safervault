@@ -438,6 +438,10 @@ footer {
   }
 
 
+  footer {
+    justify-content: center;
+  }
+
 
 }
 
