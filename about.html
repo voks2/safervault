@@ -59,7 +59,7 @@
             <li><a href="index.html#how-to" class="top-menu-link">How to use?</a></li>
             <li><a href="index.html#get-involved" class="top-menu-link">Get involved</a></li>
             <li><a href="about.html" class="top-menu-link">About</a></li>
-            <li><a href="" id="dark-mode-toggle" class="top-menu-link">Dark theme</a></li>
+            <li><button id="dark-mode-toggle" class="top-menu-link">Dark theme</button></li>
           </ul>
         </nav>
         <div class="hamburger">
@@ -84,27 +84,30 @@
           <div class="sub-section">
             <div class="section-sub-title"></div>
             <div class="section-text">
-              <p>The SaferVault project began in 2020 when Vojin Mitrović, a Web Manager at the Slavko Ćuruvija Foundation, envisioned a tool to help journalists safeguard their data in situations when they are forced or threatened to give up access to their recording devices.</p>
-              <p>Vojin successfully raised funds to develop an open-source proof-of-concept application called Safer Recorder. It was a two-part system: an Android sound recorder app, and a web platform. Journalists would record audio, which was then encrypted in near-real time and transferred to the web platform, where the editors could consume the recordings. The point of the system was that journalists could only record data and not play it back, thus making it inaccessible to the attackers in case they were put under duress.</p>
-              <p>From a technical standpoint, the Safer Recorder also demonstrated that recordings could be encrypted so that no readable data was ever stored on the device. This was important as it potentially prevented aggressive actors from retrieving information even after deletion. Check out the screenshots of the web platform and the mobile "client" app at end.</p>
+              <p>The SaferVault project began in 2020 when Vojin Mitrović, a Web Manager at the Slavko Ćuruvija Foundation, envisioned a tool to help investigative journalists protect their data in situations where they might be forced or threatened to relinquish access to their recording devices.</p>
+              <p>Vojin successfully raised funds to develop a proof-of-concept application called <strong>Safer Recorder</strong>. This system consisted of two parts: an Android voice recorder app for journalists in the field and a web platform controlled by editors in the office. Journalists could record audio, which was encrypted in real-time and transferred to the web platform, allowing editors to access the recordings. The key innovation was that journalists could capture information without being able to play it back, making it inaccessible to potential attackers who might force them to surrender their devices.</p>
+              <p>Technically, this was achieved by encrypting the data with a key held by another entity rather than the recording system itself. Crucially, no readable data was ever stored on the device, preventing attackers from retrieving information through device forensics.</p>
+              <p>Check out the screenshots of the Safer Recorder web platform and mobile app below to see how the initial concept took shape:</p>
               <figure>
                 <img src="assets/saferrecorder-imgs/control-platform-2.JPG" alt="Safer Recorder web platfrom Create user screen.">
-                <figcaption>The platform administrator could create "users", typically journalists who would record sensitive information in the field.</figcaption>
+                <figcaption>The platform administrator could create "users," typically journalists recording sensitive information in the field.</figcaption>
               </figure>
               <figure>
                 <img src="assets/saferrecorder-imgs/control-platform-1.jpg" alt="Safer Recorder web platfrom Users list screen.">
-                <figcaption>On a separate screen, the admin can manage his users.</figcaption>
+                <figcaption>On a separate screen, the admin can manage users and their access.</figcaption>
               </figure>
               <figure>
                 <img src="assets/saferrecorder-imgs/control-platform-3.jpg" alt="Safer Recorder web platfrom Recordings screen.">
-                <figcaption>All recordings captured by the users' mobile apps are instantly uploaded to the platform and can be consumed exclusively by the platform administrator.</figcaption>
+                <figcaption>All recordings captured by the users' mobile apps are instantly uploaded to the platform and can only be accessed by the platform administrator.
+
+                </figcaption>
               </figure>
               <figure>
-                <img src="assets/saferrecorder-imgs/safer-recorder-app.jpg" alt="Safer Recorder mobile app screens.">
-                <figcaption>Safer Recorder mobile app screens: Unencrypted recording (left), listening to unencrypted recordings (middle), and encrypted recording, which can only be uploaded to the web platform (right).</figcaption>
+                <img src="assets/saferrecorder-imgs/safer-recorder-app.png" alt="Safer Recorder mobile app screens.">
+                <figcaption>SaferRecorder mobile app screens: unencrypted recording (left), listening to unencrypted recordings (middle), and encrypted recording that can only be uploaded to the web platform (right).</figcaption>
               </figure>
-              <p>Building on this success, Vojin decided to evolve the concept into a more comprehensive data capture and management solution, while simplifying the design and reducing security concerns. This led to the creation of SaferVault, which adds camera and file management capabilities alongside sound recording.</p>
-              <p>Unlike the previous version, SaferVault eliminates the need for a centralized server, reducing security risks and new features, such as encrypted data export-import and Guard Mode, offer greater flexibility and protection against a broader range of safety risks and scenarios.</p>
+              <p>Building on this success, Vojin expanded the concept into a more comprehensive data capture and management solution, simplifying the design and addressing security concerns. This evolution led to the creation of <strong>SaferVault</strong>, which integrates camera and file management capabilities alongside sound recording.</p>
+              <p>Unlike the previous version, SaferVault eliminates the need for a centralized server, reducing security risks and enhancing development opportunities. With innovative mobile app <a href="/index.html#features">features</a> like compartmentalized encryption, encrypted data export-import, and Guard Mode, SaferVault offers flexibility and robust protection against a broader range of safety risks and scenarios.</p>
             </div>
           </div> 
         </div> <!--sub-section-container end-->
@@ -146,7 +149,7 @@
             <div class="section-sub-title"></div>
             <div class="section-text">
               <p>SaferVault was conceived by Vojin Mitrović, a web manager and content editor from Belgrade, Serbia, with extensive experience in managing content platforms and initiatives within the nonprofit sector, focusing on human rights, legal, and media projects. For more details, visit Vojin's <a href="https://voks2.github.io/" target="_blank">personal website</a>.</p>
-              <p>The SaferRecorder proof-of-concept application, which preceded SaferVault, was also developed under Vojin's vision. This project was funded by Internews and brought to life by Aleksandar Acić, an Android developer based in Berlin, Germany.</p>
+              <p>The Safer Recorder proof-of-concept application, which preceded SaferVault, was also developed under Vojin's vision. This project was funded by Internews and brought to life by Aleksandar Acić, an Android developer based in Berlin, Germany.</p>
             </div>
           </div> 
         </div> <!--sub-section-container end-->

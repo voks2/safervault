@@ -110,6 +110,20 @@ a {
   
 }
 
+#dark-mode-toggle {
+  background: none;
+  border: none;
+  color: inherit; /* Use the same text color as the links */
+  font: inherit;  /* Inherit the same font properties as the links */
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  text-decoration: none; /* Remove underline */
+}
+
+
+
+
 .menu ul li a:hover {
   color: var(--accent-color);
 }
@@ -277,7 +291,7 @@ a:hover {
 
 
 .section-text figure {
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 .section-text figure img {
