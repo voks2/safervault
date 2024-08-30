@@ -45,11 +45,11 @@ if (localStorage.getItem('theme') === 'dark') {
     
     if (isHomePage) {
         // Change feature images only on home page
-        if (featimg1 && featimg2 && featimg3) {
+        
             featimg1.src = "assets/features-imgs/safervault-feat-1-darktheme.png";
             featimg2.src = "assets/features-imgs/safervault-feat-2-darktheme.png";
             featimg3.src = "assets/features-imgs/safervault-feat-3-darktheme.png";
-        }
+        
     }
 
     toggleButton.textContent = "Light theme";
@@ -61,11 +61,11 @@ toggleButton.addEventListener('click', () => {
         
         if (isHomePage) {
             // Change feature images only on home page
-            if (featimg1 && featimg2 && featimg3) {
+            
                 featimg1.src = "assets/features-imgs/safervault-feat-1-darktheme.png";
                 featimg2.src = "assets/features-imgs/safervault-feat-2-darktheme.png";
                 featimg3.src = "assets/features-imgs/safervault-feat-3-darktheme.png";
-            }
+            
         }
 
         toggleButton.textContent = "Light theme";
@@ -75,11 +75,11 @@ toggleButton.addEventListener('click', () => {
 
         if (isHomePage) {
             // Change feature images only on home page
-            if (featimg1 && featimg2 && featimg3) {
+            
                 featimg1.src = "assets/features-imgs/safervault-feat-1-lighttheme.png";
                 featimg2.src = "assets/features-imgs/safervault-feat-2-lighttheme.png";
                 featimg3.src = "assets/features-imgs/safervault-feat-3-lighttheme.png";
-            }
+            
         }
 
         toggleButton.textContent = "Dark theme";
