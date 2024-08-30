@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const hamburger = document.querySelector('.hamburger');
     const menu = document.querySelector('.menu');
-    const menuItems = document.querySelectorAll('.menu ul li a');
+    const menuItems = document.querySelectorAll('.menu ul li a, .menu ul li button');
 
     // Toggle menu on hamburger click
     hamburger.addEventListener('click', function() {
@@ -90,13 +90,3 @@ toggleButton.addEventListener('click', () => {
 
 
 
-document.addEventListener('DOMContentLoaded', () => {
-    console.log('Dark mode script loaded');
-    const toggleButton = document.getElementById('dark-mode-toggle');
-    if (toggleButton) {
-        console.log('Toggle button found');
-    } else {
-        console.log('Toggle button not found');
-    }
-    // rest of the script
-});
