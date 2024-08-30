@@ -27,8 +27,13 @@ document.addEventListener('DOMContentLoaded', function() {
 // dark mode implementation
 
 const toggleButton = document.getElementById('dark-mode-toggle');
-const rootElement = document.documentElement; // or document.body
+const rootElement = document.documentElement;
 const logoImage = document.getElementById('logo-image');
+
+// Optional: Check if the page is the home page
+const isHomePage = window.location.pathname === '/index.html'; // Adjust if your homepage URL is different
+
+// Optional: Check if feature images exist on the page
 const featimg1 = document.getElementById('feat-1-img');
 const featimg2 = document.getElementById('feat-2-img');
 const featimg3 = document.getElementById('feat-3-img');
@@ -37,10 +42,15 @@ const featimg3 = document.getElementById('feat-3-img');
 if (localStorage.getItem('theme') === 'dark') {
     rootElement.classList.add('dark-mode');
     logoImage.src = "assets/safervault-logo-v2-bright.png";
-
-    featimg1.src = "assets/features-imgs/safervault-feat-1-darktheme.png";
-    featimg2.src = "assets/features-imgs/safervault-feat-2-darktheme.png";
-    featimg3.src = "assets/features-imgs/safervault-feat-3-darktheme.png";
+    
+    if (isHomePage) {
+        // Change feature images only on home page
+        if (featimg1 && featimg2 && featimg3) {
+            featimg1.src = "assets/features-imgs/safervault-feat-1-darktheme.png";
+            featimg2.src = "assets/features-imgs/safervault-feat-2-darktheme.png";
+            featimg3.src = "assets/features-imgs/safervault-feat-3-darktheme.png";
+        }
+    }
 
     toggleButton.textContent = "Light theme";
 }
@@ -49,22 +59,44 @@ toggleButton.addEventListener('click', () => {
     if (rootElement.classList.toggle('dark-mode')) {
         logoImage.src = "assets/safervault-logo-v2-bright.png";
         
-        featimg1.src = "assets/features-imgs/safervault-feat-1-darktheme.png";
-        featimg2.src = "assets/features-imgs/safervault-feat-2-darktheme.png";
-        featimg3.src = "assets/features-imgs/safervault-feat-3-darktheme.png";
-
+        if (isHomePage) {
+            // Change feature images only on home page
+            if (featimg1 && featimg2 && featimg3) {
+                featimg1.src = "assets/features-imgs/safervault-feat-1-darktheme.png";
+                featimg2.src = "assets/features-imgs/safervault-feat-2-darktheme.png";
+                featimg3.src = "assets/features-imgs/safervault-feat-3-darktheme.png";
+            }
+        }
 
         toggleButton.textContent = "Light theme";
         localStorage.setItem('theme', 'dark');
     } else {
         logoImage.src = "assets/safervault-logo-v2-dark.png";
-        toggleButton.textContent = "Dark theme";
-        
-        featimg1.src = "assets/features-imgs/safervault-feat-1-lighttheme.png";
-        featimg2.src = "assets/features-imgs/safervault-feat-2-lightheme.png";
-        featimg3.src = "assets/features-imgs/safervault-feat-3-lightheme.png";
 
-        
+        if (isHomePage) {
+            // Change feature images only on home page
+            if (featimg1 && featimg2 && featimg3) {
+                featimg1.src = "assets/features-imgs/safervault-feat-1-lighttheme.png";
+                featimg2.src = "assets/features-imgs/safervault-feat-2-lighttheme.png";
+                featimg3.src = "assets/features-imgs/safervault-feat-3-lighttheme.png";
+            }
+        }
+
+        toggleButton.textContent = "Dark theme";
         localStorage.setItem('theme', 'light');
     }
+});
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('Dark mode script loaded');
+    const toggleButton = document.getElementById('dark-mode-toggle');
+    if (toggleButton) {
+        console.log('Toggle button found');
+    } else {
+        console.log('Toggle button not found');
+    }
+    // rest of the script
 });
