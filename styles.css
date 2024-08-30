@@ -16,7 +16,7 @@
 :root {
   --text-color: #171717; /* Primary text color */
   --background-color: white;
-  --accent-color: #EF3E3D; /* Accent color for highlights */
+  --accent-color: #ef3e3d; /* Accent color for highlights */
   --border-color: black;
 }
 
@@ -252,29 +252,31 @@ a:hover {
   display: flex;
   flex-direction: row;
   padding-bottom: 10px;
-  
 }
 
 .section-text {
-
   font-weight: 300;
-  max-width: 650px;
+  max-width: 700px;
   
 }
 
-
-.section-text-sub-title {
-  font-weight: 700;
+.section-image {
+  padding-left: 200px;
+  padding-top: 20px;
+  align-items: top;
 }
-  
 
+.section-image img {
+  height: 220px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* .section-text-sub-title {  font-weight: 700; } */
 
   .section-text p{
-    margin: 0 0 20px 0;
-    
+    margin: 0 0 20px 0;   
   }
-
-
 
 footer {
   height: 80px;
@@ -307,7 +309,7 @@ footer {
 }
 
 
-
+/* ---------MOBILE VIEW ---------------- */
 
 @media (max-width: 768px ){
 
@@ -427,6 +429,7 @@ footer {
     width: 100%;
     margin-bottom: 20px;
     
+    order: 1;
   }
 
   .sub-section-container > *:not(:first-child) {
@@ -440,7 +443,19 @@ footer {
   }
   .section-text {
     width: 100%;
+
+    order: 3;
   }
+
+  .section-image {
+    order: 2;
+    align-items:left;
+    padding-left: 0px;
+    padding-bottom: 20px;
+  }
+
+
+
 
 
   footer {
