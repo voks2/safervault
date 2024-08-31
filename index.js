@@ -31,7 +31,10 @@ const rootElement = document.documentElement;
 const logoImage = document.getElementById('logo-image');
 
 // Optional: Check if the page is the home page
-const isHomePage = window.location.pathname.endsWith('index.html') || window.location.pathname === '/';
+const isHomePage = window.location.pathname.endsWith('index.html') || 
+                   window.location.pathname === '/' || 
+                   window.location.pathname === '/safervault/' || 
+                   window.location.pathname === '/safervault/index.html';
 
 // Optional: Check if feature images exist on the page
 const featimg1 = document.getElementById('feat-1-img');
